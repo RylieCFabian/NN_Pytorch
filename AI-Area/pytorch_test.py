@@ -7,6 +7,15 @@ from torchvision.transforms import v2
 
 from NN_models import NueralNetwork
 
+
+"""
+Need to Document what I've done
+
+I have no idea what this code is doing but I'm working through it
+
+"""
+
+
 batch_size = 64
 
 device = torch.accelerator.current_accelerator().type if torch.accelerator.is_available() else "cpu"
@@ -42,9 +51,13 @@ def train(dataloader, model , loss_fn, optimizer):
     for batch , (X,y) in enumerate(dataloader):
         X, y = X.to(device) , y.to(device)
 
+        # Prediction of the model
         pred = model(X)
+
+        #Loss function is cross entropy
         loss = loss_fn(pred, y)
 
+        # basic backwards propigation
         loss.backward()
         optimizer.step()
         optimizer.zero_grad()
@@ -70,7 +83,7 @@ def test(dataloader, model, loss_fn):
     print(f"Test Error: \n Accuracy: {(100*correct):>0.1f}%, Avg loss: {test_loss:>8f} \n")
 
 def main():
-    epochs = 5
+    epochs = 10
     train_dataloader = DataLoader(training_data, batch_size= batch_size)
 
     test_dataloader = DataLoader(test_data, batch_size= batch_size)
@@ -83,16 +96,18 @@ def main():
     for t in range(epochs):
         print(f"Epoch {t+1} \n-----------------------------")
         train(train_dataloader, model,loss_fn,optimizer)
-
         test(test_dataloader,model,loss_fn)
 
-    X = torch.rand(1,28,28 , device= device)
+    print("Done")
+    # X = torch.rand(1,28,28 , device= device)
     
-    print("Cleared")
+    torch.save(model.state_dict(), "model.pth")
+    print("The model has saved")
+    
     
 
 
 if __name__ == "__main__":
     main()
-
+    
 
