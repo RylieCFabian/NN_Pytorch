@@ -1,7 +1,7 @@
 # was lazy with the imports
 from pytorch_test import *
 import matplotlib.pyplot as plt
-
+import random
 
 """
 This is where I loaded the Models in after training and made it guess certain clothing Items.
@@ -28,7 +28,7 @@ classes = [
 ]
 
 model.eval()
-x , y = test_data[0][1] , test_data[0][1]
+x , y = test_data[random.randint(0, 9)]
 
 
 "This will show "
@@ -37,10 +37,10 @@ with torch.no_grad():
     pred = model(x)
     predicted , actual = classes[pred[0].argmax(0)] , classes[y] 
     
-    print(f'Predicted: "{predicted}" , Actual: "{actual}"')
+    # print(f'Predicted: "{predicted}" , Actual: "{actual}"')
 
     plt.imshow(x.squeeze().cpu(), cmap="gray")
-    plt.title(f"Actual: {classes[y]}")
+    plt.title(f"Actual: {classes[y]}\nPredicted: {predicted}")
     plt.axis("off")
     plt.show()
 

@@ -1,7 +1,5 @@
 from torch import nn
 
-
-
 # Defining the Model
 
 class NueralNetwork(nn.Module):
