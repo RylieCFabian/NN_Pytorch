@@ -20,13 +20,18 @@ OKAY I FEEL LIKE IM DOING MATH PROPERLY! Just went through their tensors walkthr
 
 November 8 : Just went through their Datasets and Dataloaders. I was trying to use a virutal enviroment for this module but I had difficult time trying to configure the kernel for the notebook.
 
-Honestly, I think the biggest challenge is understanding all the terminology in their library. But slowley but shurley, going through it!
+Nov 10: Just finished the transformation module from Pytorch. It was pretty short and I just learned how to transform data to better fit a neural network.
 
 ## Challenges
 
-I think the challenge for me right now is just understanding the vocabulary and terms described in their tutorials. I have notes at home that describe the math behind matrices but haven't really gotten into the vocab behind them. Need to study them!
+I think the challenge for me right now is just understanding the vocabulary and terms described in their tutorials. I have notes at home that describe the math behind matrices but haven't really
+gotten into the vocab behind them. Need to study them!
 
 Right now the challenge is MY SCHOOL! But regarding to Pytorch, mostly understanding the classes inside the library is the challenge.
+
+(Nov: 8)Honestly, I think the biggest challenge is understanding all the terminology in their library. But slowley but shurley, going through it!
+
+(Nov: 10) Okay I literally had no idea what I was doinig with virtual enviroments. It literally took me so long to set up the kernels for the jupyter notebooks I have.
 
 ## ⬇️ Installation
 
