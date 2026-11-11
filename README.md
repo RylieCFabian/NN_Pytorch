@@ -22,6 +22,8 @@ November 8 : Just went through their Datasets and Dataloaders. I was trying to u
 
 Nov 10: Just finished the transformation module from Pytorch. It was pretty short and I just learned how to transform data to better fit a neural network.
 
+Just also went through building a Neural Netowrk. Nothin much with it, just basic Linear function and ReLU layers to show how to build one.
+
 ## Challenges
 
 I think the challenge for me right now is just understanding the vocabulary and terms described in their tutorials. I have notes at home that describe the math behind matrices but haven't really
