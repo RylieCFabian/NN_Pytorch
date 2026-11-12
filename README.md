@@ -24,6 +24,8 @@ Nov 10: Just finished the transformation module from Pytorch. It was pretty shor
 
 Just also went through building a Neural Netowrk. Nothin much with it, just basic Linear function and ReLU layers to show how to build one.
 
+Nov 11: I just finished the tutorial on Pytorch and I learned a lot! I think next I want to create a facial recognition model that can see my face expressions and call them out!
+
 ## Challenges
 
 I think the challenge for me right now is just understanding the vocabulary and terms described in their tutorials. I have notes at home that describe the math behind matrices but haven't really
